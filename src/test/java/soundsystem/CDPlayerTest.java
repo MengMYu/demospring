@@ -18,8 +18,8 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 public class CDPlayerTest {
 	
 	@Rule
-	//public final SystemOutRule log = new SystemOutRule().enableLog();
-	public final StandardOutputStreamLog log = new StandardOutputStreamLog();
+	public final SystemOutRule log = new SystemOutRule().enableLog();
+	//public final StandardOutputStreamLog log = new StandardOutputStreamLog();
 	
 	@Autowired
 	private MeadiaPlayer player;

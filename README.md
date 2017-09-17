@@ -1,12 +1,37 @@
 # demospring
+
+###Bugs:
+
+	1.进行测试时，SgtPepper中
+	out.println("Playing " + title + " by " + artist);	
+	在CDPlayerTest中断言，总是false
+	assertEquals("Playing Sgt. Pepper's Lonely Hearts Club Band by The Beatles\n", log.getLog());
+	但改一遍
+	   out.println("Playing " + title + " by " + artist);	
+	-->out.print("Playing " + title + " by " + artist);
+	-->out.println("Playing " + title + " by " + artist);
+	出现过几次True,不知为啥。	
+	下面是日志：
+	org.junit.ComparisonFailure: expected:<... Band by The Beatles[]
+	> but was:<... Band by The Beatles[
+	]
+	>
+	应该是最后换行符的问题。
+
+	*找到一种解决办法：
+	SgtPepper中
+	out.println("Playing " + title + " by " + artist);	
+	改为:
+	out.print("Playing " + title + " by " + artist + "\n");	
+	测试都是通过的，估计刚才也是这改的。
+
+
 <<<<<<< HEAD
 
-1.
-
-org.junit.ComparisonFailure: expected:<... Band by The Beatles[]
-> but was:<... Band by The Beatles[
-]
->
+	org.junit.ComparisonFailure: expected:<... Band by The Beatles[]
+	> but was:<... Band by The Beatles[
+	]	
+	>
 	at org.junit.Assert.assertEquals(Assert.java:115)
 	at org.junit.Assert.assertEquals(Assert.java:144)
 	at soundsystem.CDPlayerTest.play(CDPlayerTest.java:39)
