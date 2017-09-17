@@ -34,7 +34,7 @@ public class CDPlayerTest {
 	
 	
 	/**
-	 *test没有通过
+	 *test通过
 	 */
 	@Test
 	public void play() {
