@@ -29,6 +29,10 @@ public class CDPlayerTest {
 		assertNotNull(cd);
 	}
 	
+	
+	/**
+	 *test没有通过
+	 */
 	@Test
 	public void play() {
 		player.play();

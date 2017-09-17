@@ -1,8 +1,11 @@
 # demospring
+<<<<<<< HEAD
 
 1.
 
 
+=======
+>>>>>>> branch 'master' of https://github.com/MengMYu/demospring.git
 CDPlayerTest.play (1)
 initializationError(org.junit.runner.manipulation.Filter)
 java.lang.Exception: No tests found matching [{ExactMatcher:fDisplayName=play], {ExactMatcher:fDisplayName=play(soundsystem.CDPlayerTest)], {LeadingIdentifierMatcher:fClassName=soundsystem.CDPlayerTest,fLeadingIdentifier=play]] from org.junit.internal.requests.ClassRequest@421faab1
